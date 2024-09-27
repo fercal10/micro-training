@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+option go_package = "micro-training/commons/api";
+package api;
+
+service SongService {
+    rpc GetSong(SongQueryRequest) returns (SongQueryResponse);
+}
+
+message SongQueryRequest {
+    string name = 1;
+    string artist = 2;
+    string album = 3;
+}
+message SongQueryResponse {
+    repeated Song songs =1;
+}
+
+message Song {
+ string id =1;
+ string name =2;
+ string artist =3;
+ string Duration =4;
+ string album =5;
+ string artwork =6;
+ string origin =7;
+ string price =8;
+}
