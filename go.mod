@@ -1,4 +1,4 @@
-module micro-training/commons
+module github.com/fercal10/micro-training
 
 go 1.22.7
 

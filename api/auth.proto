@@ -1,5 +1,5 @@
 syntax = "proto3";
-option go_package = "micro-training/commons/api";
+option go_package = "github.com/fercal10/micro-training/api";
 package api;
 
 service AuthService {
